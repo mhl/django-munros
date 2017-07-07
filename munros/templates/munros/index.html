@@ -1,0 +1,7 @@
+<h1>The Munros over 4000ft</h1>
+
+<ol>
+  {% for munro in highest_munros %}
+    <li>{{ munro.name }} ({{ munro.heightf }} feet)</li>
+  {% endfor %}
+</ol>
