@@ -13,7 +13,7 @@ class Munro(models.Model):
     heightm = models.IntegerField()
     heightf = models.IntegerField()
     grid_letters = models.CharField(max_length=2, db_column='map')
-    altmap = models.CharField(max_length=2)
+    altmap = models.CharField(max_length=2, blank=True, null=True)
     grid = models.CharField(max_length=2)
     easting = models.IntegerField()
     northing = models.IntegerField()
